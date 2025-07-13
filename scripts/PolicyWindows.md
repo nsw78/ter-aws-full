@@ -36,6 +36,4 @@ Isso permite que você execute scripts `.ps1` criados localmente.
 
 [about\_Execution\_Policies – Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies)
 
-Se precisar revisar o que esse seu script faz antes de rodar, posso ajudar a analisar também. Só colar o conteúdo aqui.
-
-Fico à disposição!
+---
