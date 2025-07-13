@@ -111,11 +111,11 @@ aws configure
 name_prefix              = "myapp"
 ami_id                   = "ami-xxxxxxxxxxxx" # Amazon Linux 2 / Ubuntu
 instance_type            = "t3.micro"
-key_name                 = "tfzombie"
+key_name                 = "nomedasuaKeyPair"
 vpc_id                   = "vpc-xxxxxxxxxxxxxxxxx"
 subnet_ids               = ["subnet-xxxxxxxx", "subnet-yyyyyyyy"]
 allowed_ssh_cidr_blocks  = ["0.0.0.0/0"] # Para testes, restrinja depois!
-grafana_admin_password   = "admin123"
+grafana_admin_password   = "admin123456789-senhahipotetica"
 iam_instance_profile_name = "myapp-ec2-profile"
 docker_image             = "xxxxxxxxxxxx.dkr.ecr.us-east-1.amazonaws.com/minha-api:latest"
 ```
@@ -162,7 +162,7 @@ Já temos integração com AWS ECR no pipeline. Para usar:
 
 ```bash
 # Autenticar no ECR (substitua pela sua região e repo ID)
-aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 035176848625.dkr.ecr.us-east-1.amazonaws.com
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin xxxxxxxxxxxx.dkr.ecr.us-east-1.amazonaws.com
 
 # Build da imagem
 docker build -t minha-api .
