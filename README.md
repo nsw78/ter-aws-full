@@ -5,7 +5,9 @@
 ````markdown
 # 🚀 Projeto Terraform AWS - Infraestrutura Completa na AWS
 
-Este repositório contém uma infraestrutura completa provisionada na AWS utilizando Terraform. O projeto é modularizado, focado em boas práticas de automação e escalabilidade, incluindo:
+Este repositório contém uma infraestrutura completa provisionada na AWS utilizando Terraform. 
+
+O projeto é modularizado, focado em boas práticas de automação e escalabilidade, incluindo:
 
 - EC2 (instância para API)
 - Auto Scaling Group (com Launch Template)
